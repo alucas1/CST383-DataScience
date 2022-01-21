@@ -123,17 +123,17 @@ df['mpg'][df['gear'] == 3]
 #@ 10
 # What about cars with a large number of forward gears?
 # Compute a Series containing values in the mpg column for which the value in the 'gear' column is 5
-df['mpg'][df.gear == 5]
+df['mpg'][df['gear'] == 5]
 
 #@ 11
 # On average, what's the MPG for cars with 3 forward gears?
 # Compute the average value of the mpg values for which the corresponding 'gear' value is 3
-df['mpg'][df.gear == 3].mean()
+df['mpg'][df['gear'] == 3].mean()
 
 #@ 12
 # On average, what's the MPG for cars with 5 forward gears?
 # Compute the average value of the mpg values for which the corresponding 'gear' value is 5
-df['mpg'][df.gear == 5].mean()
+df['mpg'][df['gear'] == 5].mean()
 
 #@ 13
 # Are lighter cars faster?
